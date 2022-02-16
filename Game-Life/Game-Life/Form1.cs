@@ -10,11 +10,52 @@ using System.Windows.Forms;
 
 namespace Game_Life
 {
+
     public partial class Form1 : Form
-    {
+    {//Создаем объект класса Random для генерации случайных чисел
+        //Создаем массив по размеру равный количеству ячеек на поле 20х20
+        Random rnd = new Random();
+        int[,] A = new int[20, 20];
+
+        //Генерируем карту и заполняем ее случайно сгенерированными числами 0(мертвая клетка) или 1(живая клетка)
+        public void GenerateMap()
+        {
+            for (int i = 0; i < 20; i++)
+                for (int j = 0; j < 20; j++)
+                    A[i, j] = rnd.Next(2);
+        }
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Задаем свойства каждой ячейки на поле
+            this.Width = 400;
+            this.Height = 400;
+            for(int i = 0; i < 20; i++)
+                for (int j = 0; j < 20; j++)
+                {
+                    //Формируем новую метку
+                    Label a = new Label();
+                    a.AutoSize = false;
+                    a.Dock = DockStyle.Fill;
+                    a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                    a.Font = new System.Drawing.Font("wingdings", 8);
+                    a.Text = Convert.ToString((char)84);
+                    a.ForeColor = Color.Yellow;
+                    tableLayoutPanel1.Controls.Add(a, j, i);
+                }
+
+            //Запускаем генерацию карты
+            GenerateMap();
         }
     }
 }
