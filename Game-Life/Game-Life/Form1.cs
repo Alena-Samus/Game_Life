@@ -25,6 +25,21 @@ namespace Game_Life
                     A[i, j] = rnd.Next(2);
         }
 
+        //Показываем какие метки мертвые(черные), а какие живые(желные)
+
+        public void ShowMap()
+        {
+            for (int i = 0; i < 20; i++)
+                for (int j = 0; j < 20; j++)
+                {
+                    Label a = tableLayoutPanel1.Controls[i * 20 + j] as Label;
+                    if (A[i, j] == 0)
+                        a.ForeColor = Color.Yellow;
+                    else
+                        a.ForeColor = Color.Black;
+                }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -56,6 +71,7 @@ namespace Game_Life
 
             //Запускаем генерацию карты
             GenerateMap();
+            ShowMap();
         }
     }
 }
