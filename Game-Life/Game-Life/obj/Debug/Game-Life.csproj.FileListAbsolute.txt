@@ -1,0 +1,10 @@
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\bin\Debug\Game-Life.exe.config
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\bin\Debug\Game-Life.exe
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\bin\Debug\Game-Life.pdb
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game-Life.csproj.AssemblyReference.cache
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game_Life.Form1.resources
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game_Life.Properties.Resources.resources
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game-Life.csproj.GenerateResource.cache
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game-Life.csproj.CoreCompileInputs.cache
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game-Life.exe
+D:\reserv\lesson4_Game_Life\Game-Life\Game-Life\obj\Debug\Game-Life.pdb
